@@ -1,0 +1,36 @@
+#:kivy 2.0
+
+<MainWindowWidget>
+    BoxLayout:
+        size_hint: 1, None
+        height: 100
+        pos: 300, 250
+        Button:
+            id: switch
+            text: 'Stop'
+            size_hint: None, None
+            size: 100, 100
+
+
+            on_release: root.switch()
+        Button:
+            text: 'Clear'
+            size_hint: None, None
+            size: 100, 100
+#            pos: 650, 250
+    
+            on_release: root.clear()
+
+<Scatterer>:
+    size_hint: None, None
+#    canvas.before:
+#        Color:
+#            rgba:.6,.6,.6,1
+#        Rectangle:
+#            size: self.size
+#            pos:0,0
+    Widget:
+        id: cont
+        size_hint: 1,1
+        pos_hint: {"center_x":.5, "center_y":.5}
+
