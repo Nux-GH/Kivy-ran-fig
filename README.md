@@ -1,2 +1,2 @@
 # Kivy-ran-fig
-Drawing on Kivy canvas
+Just a test about drawing on Kivy canvas with random colors and positions
